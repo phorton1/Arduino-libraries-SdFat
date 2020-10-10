@@ -1,3 +1,12 @@
+## PRH CHANGES
+
+  I increased BUSY_TIMEOUT_MICROS from 500000 to 1000000 to fix a "bug"
+  where the begin() failed on a cold powerup (but worked from right after
+  the TeensyLoader uploaded the program).
+
+## PREVIOUS README FILE
+
+
 The Arduino SdFat library provides read/write access to FAT16/FAT32
 file systems on SD/SDHC flash cards.
 
@@ -17,7 +26,7 @@ explicit SdFatEX(SPIClass* spiPort);
 Open flags now follow POSIX conventions.  O_RDONLY is the same as O_READ and O_WRONLY is the
 same as O_WRITE. One and only one of of the mode flags, O_RDONLY, O_RDWR, or
 O_WRONLY is required.
- 
+
 Open flags for Particle Gen3 and ARM boards are now defined by fcntl.h.
 See SdFatConfig.h for options.
 
@@ -36,7 +45,7 @@ Please read the html documentation for this library.  Start with
 html/index.html and read the Main Page.  Next go to the Classes tab and
 read the documentation for the classes SdFat, SdFatEX, SdBaseFile,
 SdFile, File, StdioStream, ifstream, ofstream, and others.
- 
+
 Please continue by reading the html documentation in SdFat/extras/html
 
 Updated 28 Dec 2018

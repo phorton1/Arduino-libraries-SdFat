@@ -28,7 +28,9 @@
 #define SDHC_PROCTL_DTW_4BIT 0x01
 const uint32_t FIFO_WML = 16;
 const uint32_t CMD8_RETRIES = 10;
-const uint32_t BUSY_TIMEOUT_MICROS = 500000;
+const uint32_t BUSY_TIMEOUT_MICROS = 1000000;
+  // prh - increased BUSY_TIMEOUT_MICROS from 500000 to 1000000
+
 //==============================================================================
 const uint32_t SDHC_IRQSTATEN_MASK =
                SDHC_IRQSTATEN_DMAESEN | SDHC_IRQSTATEN_AC12ESEN |
